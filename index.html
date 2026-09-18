@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaku | Web制作ポートフォリオ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100">
+    <header class="relative overflow-hidden bg-gradient-to-br from-indigo-950 via-slate-950 to-slate-900">
+      <div class="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl"></div>
+      <div class="relative mx-auto flex min-h-[420px] max-w-6xl flex-col justify-center px-6 py-20 sm:px-10 lg:px-16">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-indigo-300">Gaku / Web Portfolio</p>
+        <h1 class="max-w-3xl text-4xl font-bold leading-tight sm:text-6xl">使う人の毎日に、<span class="text-indigo-300">小さな変化</span>を届ける。</h1>
+        <p class="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">POSSEで学んだHTML・Tailwind CSS・JavaScriptを使って、見やすく、触って楽しいWebページを作っています。</p>
+        <a href="#works" class="mt-8 inline-flex w-fit items-center rounded-full bg-indigo-500 px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-indigo-400">作品を見る <span class="ml-2" aria-hidden="true">↓</span></a>
+      </div>
+    </header>
+    <main class="mx-auto max-w-6xl space-y-24 px-6 py-20 sm:px-10 lg:px-16">
+      <section aria-labelledby="about-title" class="grid gap-8 md:grid-cols-[1fr_2fr] md:items-center">
+        <div><p class="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-300">About me</p><h2 id="about-title" class="mt-3 text-3xl font-bold sm:text-4xl">自己紹介</h2></div>
+        <div class="rounded-3xl border border-slate-800 bg-slate-900/80 p-7 leading-8 text-slate-300 shadow-2xl shadow-indigo-950/20 sm:p-10"><p>こんにちは、Gakuです。現在はWeb制作を学びながら、情報が自然に伝わるレイアウトと、操作したときに気持ちよく感じる動きを練習しています。</p><p class="mt-5">見た目だけでなく、スマートフォンでも読みやすいこと、初めて訪れた人が迷わないことを大切にしています。</p></div>
+      </section>
+      <section aria-labelledby="skills-title">
+        <div class="mb-8 flex flex-col justify-between gap-3 sm:flex-row sm:items-end"><div><p class="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-300">Skills</p><h2 id="skills-title" class="mt-3 text-3xl font-bold sm:text-4xl">学んでいる技術</h2></div><p class="text-sm text-slate-400">基礎を組み合わせて、伝わるページを作ります。</p></div>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-xl hover:shadow-indigo-950/40"><p class="text-3xl" aria-hidden="true">&lt;/&gt;</p><h3 class="mt-5 text-lg font-bold">HTML</h3><p class="mt-2 text-sm leading-6 text-slate-400">意味を意識した構造でページを組み立てます。</p></article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-950/40"><p class="text-3xl" aria-hidden="true">✦</p><h3 class="mt-5 text-lg font-bold">Tailwind CSS</h3><p class="mt-2 text-sm leading-6 text-slate-400">余白・色・レスポンシブ対応をクラスで整えます。</p></article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-amber-400 hover:shadow-xl hover:shadow-amber-950/40"><p class="text-3xl" aria-hidden="true">{ }</p><h3 class="mt-5 text-lg font-bold">JavaScript</h3><p class="mt-2 text-sm leading-6 text-slate-400">イベントやDOM操作でページに反応を加えます。</p></article>
+          <article class="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400 hover:shadow-xl hover:shadow-emerald-950/40"><p class="text-3xl" aria-hidden="true">↗</p><h3 class="mt-5 text-lg font-bold">Git / GitHub</h3><p class="mt-2 text-sm leading-6 text-slate-400">ブランチとPRを使って変更を管理します。</p></article>
+        </div>
+      </section>
+      <section id="works" aria-labelledby="works-title">
+        <div class="mb-8"><p class="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-300">Selected works</p><h2 id="works-title" class="mt-3 text-3xl font-bold sm:text-4xl">作品スライダー</h2><p class="mt-3 max-w-2xl text-slate-400">これまでの練習で作ったページを、Splideのスライダーで紹介します。</p></div>
+        <section class="splide" aria-label="作品スライダー"><div class="splide__track"><ul class="splide__list">
+          <li class="splide__slide p-2"><article class="group relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 shadow-xl"><img src="./assets/work-profile.svg" alt="プロフィールページの作品画像" class="h-72 w-full object-cover sm:h-96" /><div class="absolute inset-0 flex items-center justify-center bg-indigo-950/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><p class="rounded-full border border-indigo-300 px-5 py-2 font-semibold text-indigo-100">詳細を見る</p></div><div class="p-6"><p class="text-sm text-indigo-300">Week 01</p><h3 class="mt-2 text-xl font-bold">プロフィールページ</h3><p class="mt-2 text-sm leading-6 text-slate-400">HTMLの基本構造とGitHub Pages公開を学んだ作品。</p></div></article></li>
+          <li class="splide__slide p-2"><article class="group relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 shadow-xl"><img src="./assets/work-cafe.svg" alt="カフェメニューページの作品画像" class="h-72 w-full object-cover sm:h-96" /><div class="absolute inset-0 flex items-center justify-center bg-cyan-950/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><p class="rounded-full border border-cyan-300 px-5 py-2 font-semibold text-cyan-100">詳細を見る</p></div><div class="p-6"><p class="text-sm text-cyan-300">Week 02</p><h3 class="mt-2 text-xl font-bold">カフェメニューページ</h3><p class="mt-2 text-sm leading-6 text-slate-400">Tailwind CSSの色・余白・カード・hoverを使った作品。</p></div></article></li>
+          <li class="splide__slide p-2"><article class="group relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900 shadow-xl"><img src="./assets/work-bmi.svg" alt="BMI計算ツールの作品画像" class="h-72 w-full object-cover sm:h-96" /><div class="absolute inset-0 flex items-center justify-center bg-amber-950/80 opacity-0 transition-opacity duration-300 group-hover:opacity-100"><p class="rounded-full border border-amber-300 px-5 py-2 font-semibold text-amber-100">詳細を見る</p></div><div class="p-6"><p class="text-sm text-amber-300">Week 06</p><h3 class="mt-2 text-xl font-bold">BMI計算ツール</h3><p class="mt-2 text-sm leading-6 text-slate-400">JavaScriptの条件分岐と関数を使って作った作品。</p></div></article></li>
+        </ul></div></section>
+      </section>
+    </main>
+    <footer class="border-t border-slate-800 bg-slate-950 px-6 py-10 text-center sm:px-10"><p class="font-semibold text-slate-200">Gaku's Portfolio</p><p class="mt-2 text-sm text-slate-500">学びを積み重ねて、できることを増やしていきます。</p><p class="mt-6 text-xs text-slate-600">© 2026 Gaku</p></footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>new Splide('.splide', { type: 'loop', perPage: 1, gap: '1rem', autoplay: true, interval: 4000 }).mount();</script>
+  </body>
+</html>
